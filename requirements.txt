@@ -11,13 +11,13 @@ Markdown==2.6.11
 matplotlib==2.2.2
 nltk==3.2.5
 numpy==1.14.2
-protobuf==3.5.2.post1
+protobuf==3.6.1
 pyparsing==2.2.0
 python-dateutil==2.7.2
 pytz==2018.3
 six==1.11.0
-tensorboard==1.7.0
-tensorflow-gpu==1.7.0  # Change to `tensorflow=1.7.0` on non-GPU machines
+tensorboard==1.12.0
+tensorflow==1.12.0  # Change to `tensorflow=1.7.0` on non-GPU machines
 termcolor==1.1.0
 tqdm==4.19.9
 Werkzeug==0.14.1
