@@ -444,13 +444,15 @@ def main(args):
     dev_filename = "dev-v1.1.json"
 
     # Training set
-    maybe_download(SQUAD_BASE_URL, train_filename, args.data_dir, num_bytes=30288272)
+    #maybe_download(SQUAD_BASE_URL, train_filename, args.data_dir, num_bytes=30288272)
+    maybe_download(SQUAD_BASE_URL, train_filename, args.data_dir, num_bytes=None)
     train_data = data_from_json(os.path.join(args.data_dir, train_filename))
     print("Training set has {} examples total".format(total_exs(train_data)))
     train_examples, train_answers, train_info, train_words, train_chars = preprocess(train_data)
 
     # Dev set
-    maybe_download(SQUAD_BASE_URL, dev_filename, args.data_dir, num_bytes=4854279)
+    #maybe_download(SQUAD_BASE_URL, dev_filename, args.data_dir, num_bytes=4854279)
+    maybe_download(SQUAD_BASE_URL, dev_filename, args.data_dir, num_bytes=None)
     dev_data = data_from_json(os.path.join(args.data_dir, dev_filename))
     print("Dev set has {} examples total".format(total_exs(dev_data)))
     dev_examples, dev_answers, dev_info, dev_words, dev_chars = preprocess(dev_data)
