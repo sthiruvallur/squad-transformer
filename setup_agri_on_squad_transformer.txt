@@ -1,0 +1,665 @@
+    1  ls
+    2  pwd
+    3  mkdir w266
+    4  cd w266/
+    5  ls
+    6  mkdir project
+    7  ls
+    8  cd project/
+    9  ls
+   10  git clone https://github.com/sthiruvallur/w266FinalProject.git
+   11  ls
+   12  sudo pip3 install --upgrade sklearn
+   13  sudo pip3 install --upgrade pandas
+   14  pip uninstall tensorflow
+   15  sudo pip uninstall tensorflow
+   16  pip3 --freeze | list
+   17  pip3 --freeze | less
+   18  pip3 freeze | less
+   19  sudo pip3 uninstall tensorflow
+   20  sudo pip3 install --user --upgrade tensorflow-gpu
+   21  ls -ltr /home/sthiruvallur/gcp/
+   22  ls -ltr /home/sthiruvallur/
+   23  cd ..
+   24  ls
+   25  mkdir -p gcp/model_output
+   26  chmod -R +w gcp/model_output/
+   27  ls
+   28  sudo pip3 install --user --upgrade tensorflow)hub
+   29  sudo pip3 install --user --upgrade tensorflow_hub
+   30  glxinfo
+   31  apt install mesa-utils
+   32  sudo apt install mesa-utils
+   33  glxinfo
+   34  sudo glxinfo
+   35  nvclock
+   36  apt-get insall nvclock
+   37  apt install nvclock
+   38  sudo lshw -C display
+   39  which nvidia-smi
+   40  nvidia-smi
+   41  sudo apt install nvidia-utils-390
+   42  nvidia-smi
+   43  sudo /usr/local/cuda-X.Y/bin/uninstall_cuda_X.Y.pl
+   44  sudo /usr/bin/nvidia-uninstall
+   45  ls
+   46  pip3
+   47  pip3 uninstall tensorflow-gpu
+   48  sudo pip3 uninstall tensorflow-gpu
+   49  sudo pip3 install --user --upgrade tensorflow
+   50  sudo pip3 install --user --upgrade tensorflow_hub
+   51  clear
+   52  ps -aef | grep jupyter
+   53  jupyter notebook &
+   54  sudo pip3 install --user --upgrade tensorflow_hub
+   55  sudo pip3 install --user --upgrade tensorflow
+   56  which python
+   57  python
+   58  python3
+   59  sudo pip3 install --upgrade -I setuptools
+   60  sudo pip3 install --ignore-installed --upgrade 
+   61  sudo pip3 install --ignore-installed --upgrade pip
+   62  sudo pip3 install --ignore-installed --upgrade tensorflow
+   63  ls -ltr /home/sthiruvallur/gcp/model_output/
+   64  firefox
+   65  sudo apt install firefox
+   66  firefox &
+   67  echo $DISPLAY
+   68  export DISPLAY=:0.0
+   69  echo $DISPLAY
+   70  firefox &
+   71  DISPLAY=:0.0 xterm &
+   72  sudo apt install xterm
+   73  DISPLAY=:0.0 xterm &
+   74  ls
+   75  cd w266/
+   76  ls
+   77  cd project/
+   78  ls
+   79  mkdir models
+   80  cd models/
+   81  ls
+   82  wget https://storage.googleapis.com/bert_models/2018_10_18/uncased_L-12_H-768_A-12.zip
+   83  ls
+   84  cd ..
+   85  ls
+   86  mkdir datasets
+   87  ls
+   88  cd datasets/
+   89  ls
+   90  mkdir SQuAD_1_1
+   91  ls
+   92  cd SQuAD_1_1/
+   93  ls
+   94  wget https://rajpurkar.github.io/SQuAD-explorer/dataset/train-v1.1.json
+   95  wget https://rajpurkar.github.io/SQuAD-explorer/dataset/dev-v1.1.json
+   96  ls
+   97  wget https://github.com/allenai/bi-att-flow/blob/master/squad/evaluate-v1.1.py
+   98  ls
+   99  cd ..
+  100  ls
+  101  cd ..
+  102  ls
+  103  git clone https://github.com/google-research/bert.git
+  104  ls
+  105  cd bert/
+  106  ls
+  107  cd ..
+  108  ls
+  109  cd datasets/
+  110  ls
+  111  cd ..
+  112  ls
+  113  cd models/
+  114  ls
+  115  which unzip
+  116  sudo apt-get install unzip
+  117  ls
+  118  which unzip
+  119  unzip uncased_L-12_H-768_A-12.zip 
+  120  ls
+  121  cd ..
+  122  cd models/
+  123  ls
+  124  pwd
+  125  export BERT_BASE_DIR=/home/sthiruvallur/w266/project/models/uncased_L-12_H-768_A-12
+  126  cd ..
+  127  ls
+  128  cd datasets/
+  129  ls
+  130  cd SQuAD_1_1/
+  131  ls
+  132  pwd
+  133  export SQUAD_DIR=/home/sthiruvallur/w266/project/datasets/SQuAD_1_1/
+  134  echo $BERT_BASE_DIR
+  135  echo $SQUAD_DIR
+  136  ls
+  137  cd ..
+  138  ls
+  139  cd bert/
+  140  ls
+  141  python run_squad.py   --vocab_file=$BERT_BASE_DIR/vocab.txt   --bert_config_file=$BERT_BASE_DIR/bert_config.json   --init_checkpoint=$BERT_BASE_DIR/bert_model.ckpt   --do_train=True   --train_file=$SQUAD_DIR/train-v1.1.json   --do_predict=True   --predict_file=$SQUAD_DIR/dev-v1.1.json   --train_batch_size=12   --learning_rate=3e-5   --num_train_epochs=2.0   --max_seq_length=384   --doc_stride=128   --output_dir=/tmp/squad_base/
+  142  python3 run_squad.py   --vocab_file=$BERT_BASE_DIR/vocab.txt   --bert_config_file=$BERT_BASE_DIR/bert_config.json   --init_checkpoint=$BERT_BASE_DIR/bert_model.ckpt   --do_train=True   --train_file=$SQUAD_DIR/train-v1.1.json   --do_predict=True   --predict_file=$SQUAD_DIR/dev-v1.1.json   --train_batch_size=12   --learning_rate=3e-5   --num_train_epochs=2.0   --max_seq_length=384   --doc_stride=128   --output_dir=/tmp/squad_base/
+  143  htop
+  144  clear
+  145  ps -aef | grep jupyter
+  146  ps -aef | grep jupyter
+  147  ls
+  148  clear
+  149  cat /etc/os-release 
+  150  pwd
+  151  wget https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
+  152  ls
+  153  cd /tmp
+  154  ls
+  155  cd
+  156  ls
+  157  cp Anaconda3-2019.03-Linux-x86_64.sh /tmp/
+  158  ls
+  159  diff Anaconda3-2019.03-Linux-x86_64.sh /tmp/Anaconda3-2019.03-Linux-x86_64.sh 
+  160  rm Anaconda3-2019.03-Linux-x86_64.sh 
+  161  ls
+  162  cd /tmp/
+  163  sha256sum Anaconda3-2019.03-Linux-x86_64.sh 
+  164  bash Anaconda3-2019.03-Linux-x86_64.sh 
+  165  cona
+  166  conda
+  167  exit
+  168  python prepro.py
+  169  exit
+  170  ls
+  171  cd w266
+  172  ls
+  173  cd project/
+  174  ls
+  175  cd ..
+  176  ls
+  177  cd DrQA/
+  178  ls
+  179  clear
+  180  ls
+  181  python prepro.py
+  182  conda activate py3
+  183  python prepro.py
+  184  python train.py -e 10 -bs 32
+  185  conda
+  186  less /home/sthiruvallur/.bashrc
+  187  clear
+  188  conda list
+  189  conda create --name py3 python=3
+  190  source activate py3
+  191  clear
+  192  which python
+  193  python --version
+  194  conda install pytorch torchvision cudatoolkit=9.0 -c pytorch
+  195  ls
+  196  git clone https://github.com/hitvoice/DrQA.git; cd DrQA
+  197  which qget
+  198  which wget
+  199  which unzip
+  200  which pip
+  201  pip install -r requirements.txt 
+  202  gcc
+  203  pip install --upgrade setuptools
+  204  pip install -r requirements.txt 
+  205  pip install --upgrade setuptools --user python
+  206  pip install --no-cache-dir spacy
+  207  conda install -c anaconda cytoolz
+  208  conda install -c anaconda ujson
+  209  ls
+  210  bash download.sh 
+  211  ls
+  212  clear
+  213  screen
+  214  screen -s
+  215  screen -ls
+  216  ls
+  217  python prepro.py
+  218  python train.py -e 10 -bs 32
+  219  cd ..
+  220  ls
+  221  cd w266/
+  222  ls
+  223  cd project/
+  224  ls
+  225  cd datasets/
+  226  ls
+  227  mkdir agri
+  228  cd agri/
+  229  ls
+  230  wget https://drive.google.com/file/d/1CsCa422YMrKBzd91Qhn_SdvZNK15Q9EG/view?usp=sharing
+  231  ls
+  232  rm -rf 'view?usp=sharing' 
+  233  ls
+  234  sudo apt-get install freeglut3 freeglut3-dev libxi-dev libxmu-dev
+  235  cat /etc/os-release 
+  236  wget https://developer.nvidia.com/compute/cuda/10.1/Prod/local_installers/cuda_10.1.105_418.39_linux.run
+  237  ls
+  238  mv cuda_10.1.105_418.39_linux.run ~sthiruvallur/tmp/
+  239  mv cuda_10.1.105_418.39_linux.run /home/sthiruvallur/
+  240  ls /home/sthiruvallur/
+  241  ls
+  242  cd
+  243  ls
+  244  sudo sh cuda_10.1.105_418.39_linux.run
+  245  ls
+  246  cd ..
+  247  ls
+  248  cd sthiruvallur/
+  249  ls
+  250  cd w266/
+  251  ls
+  252  cd project/
+  253  ls
+  254  cd datasets/
+  255  ls
+  256  cd agri/
+  257  ls
+  258  gsutil
+  259  gsutil cp gs://w266_qa_project/master_corpus.csv .
+  260  cd ..
+  261  ls
+  262  cd ..
+  263  ls
+  264  cd w266FinalProject/
+  265  ls
+  266  cd experimental/
+  267  ls
+  268  cd ..
+  269  ls
+  270  git status
+  271  mkdir src
+  272  cd src
+  273  ls
+  274  gsutil cp gs://w266_qa_project/agribot-10class-experiments.ipynb .
+  275  ls
+  276  cd ..
+  277  cd .
+  278  cd ..
+  279  pwd
+  280  cd .
+  281  cd ..
+  282  ls
+  283  cd w266/
+  284  screen -ls
+  285  screen 
+  286  screen -r
+  287  ps =aef | grep jupyter
+  288  ps -aef | grep jupyter
+  289  kill -9 9883
+  290  ps -aef | grep jupyter
+  291  conda install pip
+  292  conda install ipykernel
+  293  ps -aef | grep jupyter
+  294  jupyter notebook &
+  295  ps -aef | grep jupyter
+  296  kill -9 10433
+  297  ps -aef | grep jupyter
+  298  cd ..
+  299  ls
+  300  cd w266/
+  301  source deactivate py3
+  302  source deactivate
+  303  conda deactivate
+  304  clear
+  305  which python
+  306  python --version
+  307  which python3
+  308  python3 --version
+  309  ls
+  310  cd project/
+  311  ls
+  312  cd w266FinalProject/src/
+  313  ls
+  314  pip install seaborn
+  315  cd ../../../
+  316  jupyter notebook &
+  317  pip install xgboost
+  318  pip install textblob
+  319  pip install keras
+  320  pip install tensorflow==1.12
+  321  c
+  322  which python
+  323  python --version
+  324  pyton
+  325  python
+  326  pip --version
+  327  pip
+  328  pip3 install tensorflow==1.12
+  329  pip3 install --user tensorflow==1.12
+  330  which python
+  331  pip3 installtensorflow==1.12 --user
+  332  pip3 install tensorflow==1.12 --user
+  333  conda deactivate
+  334  which python
+  335  conda activate
+  336  which python
+  337  conda install -c anaconda tensorflow-gpu
+  338  ls
+  339  cd project/
+  340  ls
+  341  cd datasets/
+  342  ls
+  343  cd agri/
+  344  ls
+  345  pwd
+  346  conda install -c conda-forge imbalanced-learn
+  347  conda install -c conda-forge nltk
+  348  conda install -c conda-forge/label/gcc7 nltk
+  349  conda install -c conda-forge/label/cf201901 nltk
+  350  cd DrQA/
+  351  conda activate py3
+  352  python train.py -e 40 -bs 32
+  353  screen
+  354  screen -ls
+  355  screen -r 9828
+  356  screen -r 13474
+  357  lear
+  358  screen -ls
+  359  screen -r 13474
+  360  screen -ls
+  361  l
+  362  clear
+  363  ls
+  364  clear
+  365  ls
+  366  git clone https://github.com/jhyuklee/squad-tensorflow.git
+  367  ls
+  368  cd squad-tensorflow/
+  369  ls
+  370  conda install -c anaconda gensim
+  371  ls
+  372  clear
+  373  ls
+  374  mkdir data
+  375  ls
+  376  cd data/
+  377  cp ../../DrQA/SQuAD/train-v1.1.json .
+  378  cp ../../DrQA/SQuAD/dev-v1.1.json .
+  379  ls
+  380  cp ../../DrQA/glove/glove.840B.300d.txt .
+  381  ls
+  382  cd ..
+  383  mkdir embed_data
+  384  cd embed_data/
+  385  mv ../data/glove.840B.300d.txt  .
+  386  ls
+  387  ls ../data/
+  388  ls
+  389  cd ..
+  390  conda activate py3
+  391  python main --model m --debug True --test False
+  392  ls
+  393  python main.py --model m --debug True --test False
+  394  pip3 install --user tensorflow
+  395  which python
+  396  python
+  397  conda install -c anaconda tensorflow-gpu
+  398  ls
+  399  python main.py --model m --debug True --test False
+  400  conda install -c conda-forge nltk
+  401  conda install -c conda-forge/label/cf201901 nltk
+  402  python main.py --model m --debug True --test False
+  403  conda install -c travis corenlp-python
+  404  python main.py --model m --debug True --test False
+  405  vim dataset.py 
+  406  which python
+  407  python --version
+  408  which python3
+  409  python3 main.py --model m --debug True --test False
+  410  conda install -c conda-forge nltk
+  411  python3 main.py --model m --debug True --test False
+  412  conda install -c conda-forge/label/cf201901 nltk
+  413  python3 main.py --model m --debug True --test False
+  414  python3
+  415  which python
+  416  python --versionn
+  417  python --version
+  418  exit
+  419  jupyter notebook &
+  420  ps -aef | grep jupyter
+  421  kill -9 9844
+  422  ps -aef | grep jupyter
+  423  ls
+  424  ps -aef | grep jupyter
+  425  source activate py3
+  426  jupyter notebook &
+  427  conda install seaborn
+  428  python
+  429  ps -aef | grep jupyter
+  430  jupyter notebok list
+  431  jupyter notebook list
+  432  clear
+  433  htop
+  434  :q
+  435  clear
+  436  which python
+  437  python --version
+  438  exit
+  439  screen -ls
+  440  screen -r 13474
+  441  screen -ls
+  442  screen -r 9828
+  443  screen -ls
+  444  screen -S lstmSquad
+  445  which python
+  446  python --version
+  447  conda create -n py3 python=3.7
+  448  conda list | grep python
+  449  conda activate py3
+  450  which python
+  451  python --version
+  452  conda create --name py37 python=3.7
+  453  conda activate py37
+  454  which python
+  455  python --version
+  456  conda install -c anaconda tensorflow-gpu
+  457  conda install -c conda-forge nltk
+  458  conda install -c conda-forge/label/cf201901 nltk
+  459  conda install -c travis corenlp-python
+  460  python3 main.py --model m --debug True --test False
+  461  ls
+  462  cd squad-tensorflow/
+  463  ls
+  464  python3 main.py --model m --debug True --test False
+  465  sudo pip install -U nltk
+  466  python3 main.py --model m --debug True --test False
+  467  sudo pip install -U pycorenlp
+  468  python3 main.py --model m --debug True --test False
+  469  ls
+  470  vim main.py 
+  471  ls
+  472  ls embed_data/
+  473  vim main.py 
+  474  ls embed_data/
+  475  python3 main.py --model m --glove_size 840B  --debug True --test False
+  476  vim main.py 
+  477  python3 main.py --glove_size 840B  --debug True --test False
+  478  vim main.py 
+  479  python3 main.py --mode m --glove_size 840B  --debug True --test False
+  480  python3 main.py --mode m --glove_size 840B  --debug True
+  481  vim main.py 
+  482  python3 main.py --mode m --glove_size 840B  --debug True
+  483  vim main.py 
+  484  conda activate py3
+  485  clear
+  486  python train.py -e 40 -bs 32
+  487  clear
+  488  ls
+  489  clear
+  490  ls
+  491  cd SQuAD/
+  492  ls
+  493  mv train-v1.1.json train-v1.1.json.squad
+  494  ls
+  495  mv dev-v1.1.json dev-v1.1.json.squad
+  496  ls
+  497  gsutil cp gs://gs://w266_qa_project/agri_bert_train.json .
+  498  gsutil cp gs://w266_qa_project/agri_bert_train.json .
+  499  gsutil cp gs://w266_qa_project/agri_bert_dev.json .
+  500  ls
+  501  less train-v1.1.json.squad 
+  502  ls
+  503  less agri_bert_train.json 
+  504  l
+  505  ls
+  506  mv agri_bert_train.json train-v1.1.json
+  507  mv agri_bert_dev.json dev-v1.1.json
+  508  ls
+  509  ls -ltr
+  510  less dev-v1.1.json
+  511  ls
+  512  less train-v1.1.json
+  513  clear
+  514  cd ..
+  515  python prepro.py
+  516  python train.py -e 40 -bs 32
+  517  clear
+  518  ls
+  519  less train.py
+  520  clear
+  521  python train.py -e 10 -bs 32
+  522  clear
+  523  screen -ls
+  524  screen 
+  525  clear
+  526  lls
+  527  ls
+  528  cd DrQA/
+  529  ls
+  530  clear
+  531  ls
+  532  conda activate py3
+  533  which python
+  534  python --version
+  535  conda deactivate
+  536  conda list
+  537  clear
+  538  conda env list
+  539  ls
+  540  cd SQuAD/
+  541  ls
+  542  cd ..
+  543  ls
+  544  cd ..
+  545  ls
+  546  cd ..
+  547  ls
+  548  git clone https://github.com/chrischute/squad-transformer.git
+  549  ls
+  550  cd squad-transformer/
+  551  ls
+  552  conda activate py3
+  553  which python
+  554  python --version
+  555  ./setup_repo.sh 
+  556  ls
+  557  cd data/
+  558  cp ../../DrQA/SQuAD/dev-v1.1.json dev-v1.1.json.agri
+  559  cp ../../DrQA/SQuAD/train-v1.1.json train-v1.1.json.agri
+  560  ls
+  561  clear
+  562  ls 
+  563  less train.tfrecord 
+  564  ls
+  565  cp dev-v1.1.json dev-v1.1.json.original_squad
+  566  cp train-v1.1.json train-v1.1.json.original_squad
+  567  ls
+  568  cp dev-v1.1.json.agri dev-v1.1.json
+  569  cp train-v1.1.json.agri train-v1.1.json
+  570  cd ..
+  571  ls
+  572  less setup_repo.sh 
+  573  ls
+  574  vim code/preprocessing/squad_preprocess.py 
+  575  ls -ltr data/
+  576  ls
+  577  less setup_repo.sh 
+  578  vim code/preprocessing/squad_preprocess.py 
+  579  python --version
+  580  ./setup_repo.sh 
+  581  vim code/preprocessing/squad_preprocess.py 
+  582  ls
+  583  git status
+  584  git diff code/preprocessing/squad_preprocess.py
+  585  clear
+  586  vim setup_repo.sh 
+  587  ./setup_repo.sh 
+  588  source activate squad
+  589  conda envs list
+  590  conda env list
+  591  conda activate squad
+  592  ls
+  593  python code/main.py --mode=train --name=squad-transformer
+  594  conda install -c anaconda numpy
+  595  python code/main.py --mode=train --name=squad-transformer
+  596  which pip
+  597  pip show tensorflow
+  598  which python
+  599  python --version
+  600  pip install -r requirements.txt
+  601  python code/main.py --mode=train --name=squad-transformer
+  602  pip show tensorflow
+  603  pip show tensorflow-gpu
+  604  python
+  605  which pip3
+  606  pip --version
+  607  pip3 --version
+  608  which python 
+  609  python --version
+  610  python
+  611  ls -ltr /home/sthiruvallur/anaconda3/envs/squad/lib/python3.6/site-packages
+  612  rm -rf /home/sthiruvallur/anaconda3/envs/squad/lib/python3.6/site-packages/certifi-2019.03.09-py3.6.egg-info
+  613  ls -ltr /home/sthiruvallur/anaconda3/envs/squad/lib/python3.6/site-packages
+  614  pip install -r requirements.txt
+  615  python code/main.py --mode=train --name=squad-transformer
+  616  nvidia-smi
+  617  less requirements.txt 
+  618  cat /usr/local/cuda/version.txt
+  619  vim requirements.txt 
+  620  pip install -r requirements.txt
+  621  vim requirements.txt 
+  622  pip uninstall tensorflow-gpu
+  623  pip install -r requirements.txt
+  624  python code/main.py --mode=train --name=squad-transformer
+  625  sudo apt-get remove nvidia-cuda-toolkit
+  626  ls /usr/local/cuda-9.0/
+  627  ls /usr/local/
+  628  sudo apt-get --purge remove cuda-10.1
+  629  cd /usr/local/cuda-10.1/
+  630  ls
+  631  cd bin
+  632  ls
+  633  ls *install*
+  634  ls
+  635  ls cuda-uninstaller 
+  636  ./cuda-uninstaller 
+  637  ls
+  638  clear
+  639  cearl
+  640  clear
+  641  cd
+  642  cd 
+  643  ls
+  644  exit
+  645  ls
+  646  cd squad-transformer/
+  647  ls
+  648  conda env list
+  649  conda activate squad
+  650  ls
+  651  rm -rf /usr/local/cuda-10.1/
+  652  set -o emacs
+  653  sudo rm -rf /usr/local/cuda-10.1/
+  654  ls -ltr /usr/local/
+  655  sudo rm -rf /usr/local/cuda
+  656  ls -ltr /usr/local/
+  657  sudo add-apt-repository ppa:graphics-drivers/ppa
+  658  sudo apt install nvidia-384 nvidia-384-dev
+  659  sudo apt-get install g++ freeglut3-dev build-essential libx11-dev libxmu-dev libxi-dev libglu1-mesa libglu1-mesa-dev
+  660  vim requirements.txt 
+  661  pip uninstall tensorflow-gpu
+  662  pip install -r requirements.txt
+  663  python code/main.py --mode=train --name=squad-transformer
+  664  ls
+  665  history >> setup_agri_on_squad_transformer.txt
